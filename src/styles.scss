@@ -1,0 +1,63 @@
+:root {
+  --bg-theme: #09679c;
+  --bg-white: #fbfbfb;
+  --text-color: #686868;
+  --text-white: #ffffff;
+  --sidebar-btn: #2f3438;
+  --payment-btn: #036819;
+  --payment-card: #fe860f;
+  --bg-color: #ffffff;
+}
+
+// TEXT-IMPORT
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+
+body {
+  font-family: "Inter" !important;
+}
+.bg-theme {
+  background-color: var(--bg-theme);
+}
+.cash-btn {
+  margin-left: 10px;
+  width: fit-content;
+  border-radius: 18px;
+  padding: 3px 12px !important;
+  background-color: #0368190d;
+  color: var(--payment-btn) !important;
+}
+.b-bottom {
+  border-bottom: 1px solid #f0efef !important;
+}
+.card-payment {
+  margin-left: 10px;
+  width: fit-content;
+  border-radius: 18px;
+  padding: 3px 12px !important;
+  background-color: #b660090d;
+  color: var(--payment-card) !important;
+}
+.payment {
+  margin-left: 10px;
+  width: fit-content;
+  border-radius: 18px;
+  padding: 3px 12px !important;
+  background-color: #09679c0d;
+  color: var(--bg-theme) !important;
+  border-bottom: 1px solid #f0efef !important;
+}
+.edit-btn {
+  padding: 8px;
+  border-radius: 21px;
+  background-color: #09679c0f;
+}
+.remove {
+  padding: 8px;
+  margin-left: 9px;
+  border-radius: 21px;
+  background-color: #f122220f;
+}
+.align-center {
+  align-items: center;
+}
