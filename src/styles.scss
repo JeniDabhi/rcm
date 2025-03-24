@@ -1,17 +1,16 @@
 :root {
   --bg-theme: #09679c;
-  --bg-white: #fbfbfb;
-  --text-color: #686868;
-  --text-white: #ffffff;
-  --sidebar-btn: #2f3438;
-  --payment-btn: #036819;
-  --payment-card: #fe860f;
   --bg-color: #ffffff;
+  --bg-white: #fbfbfb;
+  --text-white: #ffffff;
+  --text-color: #686868;
+  --payment-btn: #036819;
+  --sidebar-btn: #2f3438;
+  --payment-card: #fe860f;
 }
 
 // TEXT-IMPORT
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 
 body {
   font-family: "Inter" !important;
@@ -60,4 +59,7 @@ body {
 }
 .align-center {
   align-items: center;
+}
+.text-color {
+  color: var(--text-color);
 }

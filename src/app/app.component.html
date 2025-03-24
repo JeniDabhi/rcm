@@ -4,7 +4,7 @@
 <div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-2 col-sm-4 col-lg-2 col-md-3">
+            <div class="col-md-3 col-xl-2 col-sm-3 px-0">
                 <div class="sidebar">
                     <div class="logo">
                         <img src="../assets/images/sidebar-img.png" alt="kube-logo">
@@ -114,15 +114,18 @@
                 </div>
             </div>
 
-<!-- MAIN CONTENT -->
+            <!-- MAIN CONTENT -->
 
-            <div class="col-10 col-sm-8 col-lg-10 col-md-9">
+            <div class="col-md-9 col-xl-10 col-sm-9 px-0">
                 <div class="main">
                     <div class="header d-flex justify-content-between">
-                        <div class="dashboard-title">
-                            <h4>Dashboard</h4>
-                            <p>Keep Track Assess, And Enhance Your Financial Performance</p>
+
+                        <div class="cash-riconcilation d-flex align-center gap-3">
+                            <img src="../assets/images/cash-management-2.png" alt="cash-report">
+                            <img src="../assets/images/arrow-right.svg" alt="arrow-right">
+                            <p class="m-0">Cash Reconciliation Report</p>
                         </div>
+
                         <div class="d-flex align-center">
                             <div class="search-bar">
                                 <input type="text" placeholder="Search Here...">
@@ -137,106 +140,93 @@
                             </div>
                         </div>
                     </div>
-                    <div class="table-main">
-                        <div class="table-title d-flex justify-content-between">
-                            <h2>Cashier Setup</h2>
-                            <div class="cashier d-flex gap-1 align-center bg-theme ">
-                                <img src="../assets/images/add.png" alt="add">
-                                <p class=""> New Cashier</p>
-                            </div>
-                        </div>
 
-                        <!-- INFORMATION BOX-->
+                    <!-- BALANCE-CHEACKING -->
 
-                        <div class="form-fill">
+                    <div class="balance-cheaking">
+                        <div class="form-info d-flex align-center flex-wrap">
                             <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
-                                        <div class="information d-flex flex-wrap">
-                                            <label for="">Cashier ID </label>
-                                            <input type="text" name="" id="" placeholder="#125255">
+                                <div class="row" style="align-items: center; padding: 14px; white-space: nowrap;">
+                                    <div class="col-2">
+                                        <div class="d-flex info gap-2">
+                                            <p class="">Cashier ID :</p>
+                                            <p class="text-color cashier-id">#125563</p>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
-                                        <div class="information d-flex flex-wrap">
-                                            <label for="">Cashier Name </label>
-                                            <input type="text" name="" id="" placeholder="0111">
+                                    <div class="col-3 info cashier-name">
+                                        <div class="d-flex gap-2">
+                                            <p>Cashier name :</p>
+                                            <p class="text-color">Cameron Williamson</p>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
-                                        <div class="information d-flex flex-wrap">
-                                            <label for="">Location </label>
-                                            <input type="text" name="" id="" placeholder="Floor">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
-                                        <div class="information d-flex flex-wrap">
-                                            <label for="">Department </label>
-                                            <input type="text" name="" id="" placeholder="cashnino">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
-                                        <div class="information d-flex flex-wrap">
-                                            <label for="">Currency </label>
-                                            <input type="text" name="" id="" placeholder="USA">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="information-second-line">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
-                                            <div class="information d-flex flex-wrap">
-                                                <label for="">Linked cashier ID</label>
-                                                <input type="text" name="" id="" placeholder="15585">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
-                                            <div class="information d-flex flex-wrap">
-                                                <label for="">revenue GL No</label>
-                                                <input type="text" name="" id="" placeholder="22">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
-                                            <div class="information d-flex flex-wrap">
-                                                <label for="">Clearing GL No.</label>
-                                                <input type="text" name="" id="" placeholder="55">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
-                                            <div class="information d-flex flex-wrap Status">
-                                                <label for="">Status</label>
-                                                <select id="status" class="dropdown">
-                                                    <option value="pending">Pending</option>
-                                                    <option value="approved">Approved</option>
-                                                    <option value="rejected">Rejected</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-xl-3 col-lg-4 col-sm-6">
-                                            <div class="information d-flex flex-wrap cash">
-                                                <label for="">Allowed Payment Method</label>
-                                                <div class="d-flex cash gap-2">
-                                                    <select id="status" class="cash-dropdown">
-                                                        <option value="pending">cash</option>
-                                                        <option value="approved">online</option>
-                                                        <option value="rejected">card</option>
-                                                    </select>
-                                                    <button class="save-btn">save</button>
-                                                </div>
-
-                                            </div>
+                                    <div class="col-7 info" style="margin: 0px auto;">
+                                        <div class="cashier-btn d-flex justify-content-end">
+                                            <a href="javascript:void(0)" class="post-btn bg-theme">post</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="balance-info gap-5">
+                            <div class="continer-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-4 col-xl-2">
+                                        <div class="c-balance">
+                                            <h5>Current Balance</h5>
+                                            <p>JOD 25,000.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-4 col-xl-2">
+                                        <div class="r-balance">
+                                            <h5>Reconciled Balance</h5>
+                                            <p>JOD 46,000.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-4 col-xl-8">
+                                        <div class="difference">
+                                            <h5>Difference</h5>
+                                            <p>-JOD 20,000.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TABLE-MAIN -->
+
+                    <div class="table-main">
+                        <div class="container-fluid">
+                            <div class="table-title d-flex flex-wrap justify-content-between align-center">
+                                <h5>Cash Reconciliation Report</h5>
+                                <div class="cash-report d-flex align-items-center gap-3">
+                                    <div class="date d-flex align-center gap-4">
+                                        <label class="mb-0">Date</label>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="d-flex align-center gap-3 payment-method">
+                                        <label class=" mb-0">Payment Method</label>
+                                        <select class="form-select">
+                                            <option selected>Select Payment Method</option>
+                                            <option value="cash">Cash</option>
+                                            <option value="credit_card">Credit Card</option>
+                                            <option value="bank_transfer">Bank Transfer</option>
+                                        </select>
+                                    </div>
+                                    <div class="Search">
+                                        <input type="text" class="form-control" placeholder="Search Here">
+                                    </div>
+                                    <img src="../assets/images/refresh.png" alt="refresh" class="refresh">
+                                    <a href="javascript:void(0)" class="apply-btn m-0">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+
 
                         <!-- TABLE -->
 
-                        <div class="cashier-setup-table">
+
+                        <div class="cashier-setup-table scrollbar" id="style-2">
                             <table>
                                 <thead>
                                     <tr class="justify-content-between">
@@ -256,7 +246,7 @@
 
                                 <tbody>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td> <input type="checkbox" id="" class="me-2"> #125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -275,7 +265,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -294,7 +284,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -313,7 +303,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -332,7 +322,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -351,7 +341,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -370,7 +360,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -389,7 +379,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -408,7 +398,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -427,7 +417,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -446,7 +436,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -465,7 +455,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -484,7 +474,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -503,7 +493,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -522,7 +512,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -541,7 +531,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -560,7 +550,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -579,7 +569,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -598,7 +588,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -617,7 +607,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -636,7 +626,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -655,7 +645,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>#125563</td>
+                                        <td><input type="checkbox" id="" class="me-2">#125563</td>
                                         <td>Cameron Williamson</td>
                                         <td>Floor 1</td>
                                         <td>cashnino</td>
@@ -675,6 +665,7 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <div class="force-overflow"></div>
                         </div>
                     </div>
                 </div>
