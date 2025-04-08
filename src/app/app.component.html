@@ -173,9 +173,106 @@
                         </div>
                     </div>
 
+
+
+                    <!-- POSTING SPECIFICATIONS -->
+
+                    <div class="container-fluid p-0">
+                        <div class="posting-specification">
+                            <div class="posting-title">
+                                <h6 class="m-0">posting-specification</h6>
+                            </div>
+                            <div class="payment-type">
+                                <div class="payment-title">
+                                    <h6 class="m-0">Payment Types</h6>
+                                </div>
+                                <ul class="d-flex flex-wrap align-center gap-2">
+                                    <li>
+                                        <input class="form-check-input" type="radio" name="paymentType" id="cash"
+                                            checked>
+                                        <label class="form-check-label" for="cash">Cash</label>
+                                    </li>
+                                    <li> <input class="form-check-input" type="radio" name="paymentType" id="Cheque">
+                                        <label class="form-check-label" for="Cheque">Cheque</label>
+                                    </li>
+                                    <li> <input class="form-check-input" type="radio" name="paymentType"
+                                            id="Credit Card">
+                                        <label class="form-check-label" for="Credit Card">Credit Card</label>
+                                    </li>
+                                    <li> <input class="form-check-input" type="radio" name="paymentType"
+                                            id="Debit Card">
+                                        <label class="form-check-label" for="Debit Card">Debit Card</label>
+                                    </li>
+                                    <li class="wire-transfer"> <input class="form-check-input" type="radio"
+                                            name="paymentType" id="wire transfer">
+                                        <label class="form-check-label" for="wire transfer">Wire
+                                            Transfer</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="payment-information">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="d-flex form-content gap-3 align-items-center">
+                                                <label for="form-label" class="doc-date">Doc. Date</label>
+                                                <input type="" class="form-control" value="11-03-2025">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="d-flex form-content gap-3 align-items-center">
+                                                <label for="form-label" class="Posting date">Posting date</label>
+                                                <input type="" class="form-control" value="11-03-2025">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="d-flex payble-content align-items-center form-content gap-3">
+                                                <label for="form-label" class="payble">Payble</label>
+                                                <input type="" class="form-control" value="615.550">
+                                                <p class="m-0 jod">JOD</p>
+                                                <img src="../assets/images/mail.svg" alt="mail" class="mail pointer"
+                                                    height="30px">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="d-flex form-content gap-3 align-items-center">
+                                                <label for="form-label" class="paid">paid</label>
+                                                <input type="" class="form-control" value="11-03-2025">
+                                                <p class="m-0 jod">JOD</p>
+                                                <img src="../assets/images/mobile.svg" alt="mobile"
+                                                    class="mobile pointer" height="35px">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="d-flex form-content gap-3 align-items-center">
+                                                <label for="form-label" class="Change">Change</label>
+                                                <input type="" class="form-control" value="11-03-2025">
+                                                <p class="m-0 jod">JOD</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-3">
+                                            <div class="d-flex form-content gap-2 form-btn">
+                                                <a href="javascript:void(0)" class="post">Post</a>
+                                                <div class="d-flex align-items-center post-printer">
+                                                    <img src="../assets/images/printer-1.svg" alt="printer-1">
+                                                    <a href="javascript:void(0)">+ Post</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                     <!-- PAYMENT-PROCESS -->
 
-                    <div class="posting-content">
+                    <!-- <div class="posting-content">
                         <div class="post-title">
                             <p>Posting specifications</p>
                         </div>
@@ -234,8 +331,8 @@
                                                         <label for="form-label" class="payble">Payble</label>
                                                         <input type="" class="form-control" value="615.550">
                                                         <p class="m-0 jod">JOD</p>
-                                                        <img src="../assets/images/mail.svg" alt="mail" class="mail pointer"
-                                                            height="30px">
+                                                        <img src="../assets/images/mail.svg" alt="mail"
+                                                            class="mail pointer" height="30px">
                                                     </div>
 
 
@@ -268,77 +365,16 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <!-- <div class="d-flex gap-3">
-                                                <div class="col-6">
-                                                    <div class="d-flex payble-content form-content gap-3">
-                                                        <label for="form-label" class="payble">Payble</label>
-                                                        <input type="" class="form-control" value="615.550">
-                                                    </div>
-                                                </div>
-                                                <div class=" align-items-center d-flex gap-3 payble-inner mb-2">
-                                                    <p class="m-0 jod">JOD</p>
-                                                    <img src="../assets/images/mail.svg" alt="mail" class="mail pointer"
-                                                        height="30px">
-                                                </div>
-                                            </div> -->
-
-
-                                            <!-- <div class="d-flex gap-3">
-                                                <div class="col-6">
-                                                    <div class="d-flex paid-content form-content gap-3">
-                                                        <label for="form-label" class="paid">Paid</label>
-                                                        <input type="" class="form-control" value="-">
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex gap-3 align-items-center mb-2 paid-inner">
-                                                    <p class="m-0 jod">JOD</p>
-                                                    <img src="../assets/images/mobile.svg" alt="mobile"
-                                                        class="mobile pointer" height="33px">
-                                                </div>
-                                            </div> -->
-
-                                            <!-- <div class="d-flex gap-3">
-                                                <div class="col-6">
-                                                    <div class="d-flex form-content change-content gap-3">
-                                                        <label for="form-label" class="change">Change</label>
-                                                        <input type="" class="form-control" value="0.000">
-                                                    </div>
-                                                </div>
-                                                <p class="m-0 jod">JOD</p>
-                                            </div> -->
-
-
-                                            <!-- <div class="d-flex gap-3 align-items-center">
-                                                <div class="col-6">
-                                                    <div class="d-flex form-content gap-2 form-btn justify-content-end">
-                                                        <a href="javascript:void(0)" class="post">Post</a>
-                                                        <div class="d-flex align-center printer-post">
-                                                            <img src="../assets/images/printer-1.svg" alt="printer-1">
-                                                            <a href="javascript:void(0)">+ Post</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <img src="../assets/images/printer-2.svg" alt="printer-2" height="30px"
-                                                    class="printer-2 pointer">
-                                            </div> -->
-
-
-                                            <!-- <div class="d-flex gap-3">
-                                                <div class="col-6">
-                                                    <div class="d-flex form-content gap-3">
-                                                        <label for="form-label" class="repayable">Repayable</label>
-                                                        <input type="" class="form-control" value="0.000">
-                                                    </div>
-                                                </div>
-                                                <a href="javascript:void(0)" class="repay-btn m-0">Repay</a>
-                                            </div> -->
                                         </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
+
+
+
                 </div>
             </div>
         </div>

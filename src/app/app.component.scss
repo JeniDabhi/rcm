@@ -363,66 +363,48 @@
     }
   }
 
-  .posting-content {
-    border-radius: 10px;
-    padding-bottom: 10px;
-    box-shadow: 0px 0px 4px 0px #89898940;
+  // posting-specification
 
-    @media screen and (max-width: 1399px) {
-      margin-bottom: 20px;
-    }
-
-    .post-title {
+  .posting-specification {
+    padding-bottom: 20px;
+    border: 1px solid #f0f2f4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    .posting-title {
+      padding: 14px 0px 16px 15px;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       background-color: var(--bg-color);
 
-      p {
-        font-size: 16px;
+      h6 {
         font-weight: 700;
-        padding: 6px 20px;
-        margin-bottom: 0px;
         color: var(--header-text);
         font-family: "Lato", sans-serif;
       }
     }
-    .payment-information {
-      padding: 15px;
-    }
-
     .payment-type {
-      margin-left: 10px;
+      margin: 20px 20px;
       border-radius: 10px;
-      box-shadow: 0px 0px 4px 0px #89898940;
-
-      @media screen and (max-width: 1199px) {
-        margin-right: 10px;
-      }
-
+      border: 1px solid #f0f2f4;
       .payment-title {
+        padding: 14px 0px 16px 15px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         background-color: var(--bg-color);
 
-        p {
+        h6 {
           font-weight: 700;
-          padding: 10px 20px;
           color: var(--header-text);
           font-family: "Lato", sans-serif;
         }
       }
-
       ul {
-        padding: 15px;
-
+        list-style: none;
+        margin-top: 18px;
         li {
-          list-style: none;
-          padding-right: 15px;
-          border-right: 1px solid #f0f2f4;
-
           label {
-            font-size: 14px;
             cursor: pointer;
+            font-size: 14px;
             font-weight: 500;
             padding-left: 10px;
             color: var(--text-body);
@@ -432,242 +414,362 @@
             }
           }
         }
-        .wire-transfer {
-          border: none;
-        }
       }
     }
-
-    //
-
-    .form-main {
-      padding-left: 30px;
-
-      @media screen and (max-width: 575px) {
-        padding-left: 10px;
-      }
-
+    .payment-information {
+      padding: 0px 20px;
       form {
         .form-content {
-          padding-bottom: 10px;
-          align-items: center;
-
-          @media screen and (max-width: 575px) {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px !important;
+          padding-right: 15px;
+          border-right: 1px solid #f0f2f4;
+          a {
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
           }
-
-          @media screen and (max-width: 1199px) {
-            width: 100%;
+          .post , .post-printer{
+            color: #ffffff;
+            padding: 8px 42px;
+            border-radius: 6px;
+            background-color: #0056b0;
           }
-
           label {
             font-size: 14px;
             font-weight: 500;
             white-space: nowrap;
             color: var(--text-body);
-
-            @media screen and (max-width: 767px) {
-              font-size: 13px;
-            }
           }
-
-          .doc-date {
-            padding-right: 20px;
-            padding-top: 0px !important;
-          }
-          .payble {
-            padding-right: 72px;
-          }
-          .mail {
-            height: 30px;
-            padding: 8px;
-            border-radius: 5px;
-            background-color: var(--bg-color);
-          }
-          .paid {
-            padding-right: 88px;
-
-            @media screen and (max-width: 575px) {
-              padding: 0px !important;
-            }
-          }
-          .mobile {
-            height: 30px;
-            padding: 8px 10px;
-            border-radius: 5px;
-            background-color: var(--bg-color);
-          }
-          .change {
-            padding-right: 64px;
-          }
-          .repayable {
-            padding-right: 45px;
-          }
-
           input {
-            width: 100%;
             font-size: 14px;
             font-weight: 500;
             color: var(--text-body);
-
-            @media screen and (max-width: 767px) {
-              font-size: 12px;
-            }
           }
-        }
-
-        .printer-2 {
-          margin-bottom: 10px;
-          padding: 5px;
-          border-radius: 5px;
-          background-color: var(--bg-color);
-
-          @media screen and (max-width: 1199px) {
-            margin-left: 0px;
-          }
-          @media screen and (max-width: 991px) {
-            display: none;
-          }
-        }
-
-        .repay-btn {
-          font-size: 14px;
-          font-weight: 600;
-          margin-left: 5px;
-          color: #ffffff;
-          padding: 5px 30px;
-          height: 35px;
-          border-radius: 6px;
-          text-decoration: none;
-          background-color: var(--theme-color);
-
-          @media screen and (max-width: 1199px) {
-            display: none;
-          }
-        }
-
-        .form-btn {
-          @media screen and (max-width: 575px) {
-            font-size: 12px;
-            justify-content: start !important;
-          }
-          a {
-            text-decoration: none;
-          }
-          .post {
-            font-size: 14px;
-            font-weight: 600;
-            color: #ffffff;
-            padding: 5px 35px;
-            border-radius: 6px;
-            background-color: var(--theme-color);
-
-            @media screen and (max-width: 320px) {
-              padding: 5px 30px;
-            }
-            @media screen and (max-width: 991px) {
-              padding: 5px 25px;
-            }
-            @media screen and (max-width: 767px) {
-              font-size: 12px;
-            }
-          }
-          .printer-post {
-            color: #ffffff;
-            padding: 5px 22px;
-            border-radius: 6px;
-            background-color: var(--theme-color);
-
-            @media screen and (max-width: 991px) {
-              padding: 5px 15px;
-            }
-            @media screen and (max-width: 575px) {
-              padding: 5px 22px;
-            }
-
-            a {
-              font-size: 14px;
-              color: #ffffff;
-              font-weight: 600;
-              padding-left: 5px;
-
-              @media screen and (max-width: 767px) {
-                font-size: 12px;
-              }
-            }
-            @media screen and (max-width: 1399px) {
-              display: flex;
-              flex-wrap: wrap;
-            }
-          }
-        }
-
-        .payble-content {
-          @media screen and (max-width: 575px) {
-            gap: 10px !important;
-          }
-        }
-        .paid-content {
-          @media screen and (max-width: 575px) {
-            gap: 10px !important;
-            padding-top: 0px;
-          }
-        }
-        .change-content {
-          @media screen and (max-width: 575px) {
-            gap: 5px !important;
-            padding-top: 0px;
-          }
-        }
-        .jod {
-          font-size: 14px;
-          font-weight: 500;
-          color: var(--text-body);
-          @media screen and (max-width: 991px) {
-            display: none;
-          }
-        }
-
-        .payble-content,
-        .paid-content {
-          .payble-inner,
-          .paid-inner {
-            p,
-            img {
-              @media screen and (max-width: 991px) {
-                display: none;
-              }
-            }
-          }
-        }
-
-        .payble-inner,
-        .paid-inner {
-          .jod {
+          p {
             font-size: 14px;
             font-weight: 500;
             color: var(--text-body);
-
-            @media screen and (max-width: 991px) {
-              display: none;
-            }
           }
-
           img {
             padding: 5px;
             border-radius: 5px;
             background-color: var(--bg-color);
-
-            @media screen and (max-width: 575px) {
-              display: none;
+          }
+          .post-printer{
+            img{
+              background-color: transparent;
+            }
+            a{
+              color: #ffffff;
             }
           }
         }
       }
     }
   }
+
+  // .posting-content {
+  //   border-radius: 10px;
+  //   padding-bottom: 10px;
+  //   box-shadow: 0px 0px 4px 0px #89898940;
+
+  //   @media screen and (max-width: 1399px) {
+  //     margin-bottom: 20px;
+  //   }
+
+  //   .post-title {
+  //     border-top-left-radius: 10px;
+  //     border-top-right-radius: 10px;
+  //     background-color: var(--bg-color);
+
+  //     p {
+  //       font-size: 16px;
+  //       font-weight: 700;
+  //       padding: 6px 20px;
+  //       margin-bottom: 0px;
+  //       color: var(--header-text);
+  //       font-family: "Lato", sans-serif;
+  //     }
+  //   }
+  //   .payment-information {
+  //     padding: 15px;
+  //   }
+
+  //   .payment-type {
+  //     margin-left: 10px;
+  //     border-radius: 10px;
+  //     box-shadow: 0px 0px 4px 0px #89898940;
+
+  //     @media screen and (max-width: 1199px) {
+  //       margin-right: 10px;
+  //     }
+
+  //     .payment-title {
+  //       border-top-left-radius: 10px;
+  //       border-top-right-radius: 10px;
+  //       background-color: var(--bg-color);
+
+  //       p {
+  //         font-weight: 700;
+  //         padding: 10px 20px;
+  //         color: var(--header-text);
+  //         font-family: "Lato", sans-serif;
+  //       }
+  //     }
+
+  //     ul {
+  //       padding: 15px;
+
+  //       li {
+  //         list-style: none;
+  //         padding-right: 15px;
+  //         border-right: 1px solid #f0f2f4;
+
+  //         label {
+  //           font-size: 14px;
+  //           cursor: pointer;
+  //           font-weight: 500;
+  //           padding-left: 10px;
+  //           color: var(--text-body);
+
+  //           @media screen and (max-width: 767px) {
+  //             font-size: 12px;
+  //           }
+  //         }
+  //       }
+  //       .wire-transfer {
+  //         border: none;
+  //       }
+  //     }
+  //   }
+
+  //   .form-main {
+  //     padding-left: 30px;
+
+  //     @media screen and (max-width: 575px) {
+  //       padding-left: 10px;
+  //     }
+
+  //     form {
+  //       .form-content {
+  //         padding-bottom: 10px;
+  //         align-items: center;
+
+  //         @media screen and (max-width: 575px) {
+  //           display: flex;
+  //           flex-wrap: wrap;
+  //           gap: 10px !important;
+  //         }
+
+  //         @media screen and (max-width: 1199px) {
+  //           width: 100%;
+  //         }
+
+  //         label {
+  //           font-size: 14px;
+  //           font-weight: 500;
+  //           white-space: nowrap;
+  //           color: var(--text-body);
+
+  //           @media screen and (max-width: 767px) {
+  //             font-size: 13px;
+  //           }
+  //         }
+
+  //         .doc-date {
+  //           padding-right: 20px;
+  //           padding-top: 0px !important;
+  //         }
+  //         .payble {
+  //           padding-right: 72px;
+  //         }
+  //         .mail {
+  //           height: 30px;
+  //           padding: 8px;
+  //           border-radius: 5px;
+  //           background-color: var(--bg-color);
+  //         }
+  //         .paid {
+  //           padding-right: 88px;
+
+  //           @media screen and (max-width: 575px) {
+  //             padding: 0px !important;
+  //           }
+  //         }
+  //         .mobile {
+  //           height: 30px;
+  //           padding: 8px 10px;
+  //           border-radius: 5px;
+  //           background-color: var(--bg-color);
+  //         }
+  //         .change {
+  //           padding-right: 64px;
+  //         }
+  //         .repayable {
+  //           padding-right: 45px;
+  //         }
+
+  //         input {
+  //           width: 100%;
+  //           font-size: 14px;
+  //           font-weight: 500;
+  //           color: var(--text-body);
+
+  //           @media screen and (max-width: 767px) {
+  //             font-size: 12px;
+  //           }
+  //         }
+  //       }
+
+  //       .printer-2 {
+  //         margin-bottom: 10px;
+  //         padding: 5px;
+  //         border-radius: 5px;
+  //         background-color: var(--bg-color);
+
+  //         @media screen and (max-width: 1199px) {
+  //           margin-left: 0px;
+  //         }
+  //         @media screen and (max-width: 991px) {
+  //           display: none;
+  //         }
+  //       }
+
+  //       .repay-btn {
+  //         font-size: 14px;
+  //         font-weight: 600;
+  //         margin-left: 5px;
+  //         color: #ffffff;
+  //         padding: 5px 30px;
+  //         height: 35px;
+  //         border-radius: 6px;
+  //         text-decoration: none;
+  //         background-color: var(--theme-color);
+
+  //         @media screen and (max-width: 1199px) {
+  //           display: none;
+  //         }
+  //       }
+
+  //       .form-btn {
+  //         @media screen and (max-width: 575px) {
+  //           font-size: 12px;
+  //           justify-content: start !important;
+  //         }
+  //         a {
+  //           text-decoration: none;
+  //         }
+  //         .post {
+  //           font-size: 14px;
+  //           font-weight: 600;
+  //           color: #ffffff;
+  //           padding: 5px 35px;
+  //           border-radius: 6px;
+  //           background-color: var(--theme-color);
+
+  //           @media screen and (max-width: 320px) {
+  //             padding: 5px 30px;
+  //           }
+  //           @media screen and (max-width: 991px) {
+  //             padding: 5px 25px;
+  //           }
+  //           @media screen and (max-width: 767px) {
+  //             font-size: 12px;
+  //           }
+  //         }
+  //         .printer-post {
+  //           color: #ffffff;
+  //           padding: 5px 22px;
+  //           border-radius: 6px;
+  //           background-color: var(--theme-color);
+
+  //           @media screen and (max-width: 991px) {
+  //             padding: 5px 15px;
+  //           }
+  //           @media screen and (max-width: 575px) {
+  //             padding: 5px 22px;
+  //           }
+
+  //           a {
+  //             font-size: 14px;
+  //             color: #ffffff;
+  //             font-weight: 600;
+  //             padding-left: 5px;
+
+  //             @media screen and (max-width: 767px) {
+  //               font-size: 12px;
+  //             }
+  //           }
+  //           @media screen and (max-width: 1399px) {
+  //             display: flex;
+  //             flex-wrap: wrap;
+  //           }
+  //         }
+  //       }
+
+  //       .payble-content {
+  //         @media screen and (max-width: 575px) {
+  //           gap: 10px !important;
+  //         }
+  //       }
+  //       .paid-content {
+  //         @media screen and (max-width: 575px) {
+  //           gap: 10px !important;
+  //           padding-top: 0px;
+  //         }
+  //       }
+  //       .change-content {
+  //         @media screen and (max-width: 575px) {
+  //           gap: 5px !important;
+  //           padding-top: 0px;
+  //         }
+  //       }
+  //       .jod {
+  //         font-size: 14px;
+  //         font-weight: 500;
+  //         color: var(--text-body);
+  //         @media screen and (max-width: 991px) {
+  //           display: none;
+  //         }
+  //       }
+
+  //       .payble-content,
+  //       .paid-content {
+  //         .payble-inner,
+  //         .paid-inner {
+  //           p,
+  //           img {
+  //             @media screen and (max-width: 991px) {
+  //               display: none;
+  //             }
+  //           }
+  //         }
+  //       }
+
+  //       .payble-inner,
+  //       .paid-inner {
+  //         .jod {
+  //           font-size: 14px;
+  //           font-weight: 500;
+  //           color: var(--text-body);
+
+  //           @media screen and (max-width: 991px) {
+  //             display: none;
+  //           }
+  //         }
+
+  //         img {
+  //           padding: 5px;
+  //           border-radius: 5px;
+  //           background-color: var(--bg-color);
+
+  //           @media screen and (max-width: 575px) {
+  //             display: none;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 // .col-2 {
